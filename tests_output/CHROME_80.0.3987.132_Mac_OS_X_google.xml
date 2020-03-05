@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="google"
+    errors="0" failures="1" hostname="" id="" package="google" skipped="0"
+    tests="1" time="7.571" timestamp="">
+  
+    <testcase name="Demo test Google" classname="google" time="7.571" assertions="2">
+
+      <failure message="Expected element &lt;#lst-ib&gt; to have css property &#34;display&#34; - element was not found - expected [0;32m&#34;present&#34;[0m but got: [0;31m&#34;not present&#34;[0m[0;90m (5133ms)[0m">    at Object.Demo test Google (/Users/dalyw01/Desktop/learnNightwatch/tests/google.js:14:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+
+    
+      <failure message="    at Object.Demo test Google (/Users/dalyw01/Desktop/learnNightwatch/tests/google.js:14:19)">    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

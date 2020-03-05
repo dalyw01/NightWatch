@@ -1,0 +1,14 @@
+{
+  "name": "learnnightwatch",
+  "version": "1.0.0",
+  "description": "to learn automation testing",
+  "main": "nightwatch.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "William Daly",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^1.3.4"
+  }
+}
