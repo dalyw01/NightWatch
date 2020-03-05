@@ -68,17 +68,13 @@ Download selenium-standalone JAR from here - https://www.selenium.dev/downloads/
 
 Download chrome-driver here - https://chromedriver.chromium.org/downloads
 
+Place in drivers folder - lib/drivers/chromedriver
+
 Change nightwatch.js -  "server_path": "lib/drivers/chromedriver",
 
+To run a test - node nightwatch tests/ecosia.js
 
-node nightwatch -a ecosia
-
-
-
-
-
-
-
+Need to do more research into - https://nightwatch-api.netlify.com/
 
 
 

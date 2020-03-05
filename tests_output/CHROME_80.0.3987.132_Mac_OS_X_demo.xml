@@ -5,18 +5,16 @@
 
   <testsuite name="demo"
     errors="0" failures="0" hostname="" id="" package="demo" skipped="0"
-    tests="2" time="2.090" timestamp="">
+    tests="2" time="3.031" timestamp="">
   
-    <testcase name="Demo test Ecosia.org 1" classname="demo" time="0.08500" assertions="2">
+    <testcase name="Verify title exists" classname="demo" time="1.141" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Demo test Ecosia.org 2" classname="demo" time="2.005" assertions="3">
-
-    
+    <testcase name="Verify we can type into form field" classname="demo" time="1.890" assertions="2">
 
     
 

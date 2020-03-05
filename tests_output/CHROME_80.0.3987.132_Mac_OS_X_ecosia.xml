@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="ecosia"
+    errors="0" failures="0" hostname="" id="" package="ecosia" skipped="0"
+    tests="2" time="3.010" timestamp="">
+  
+    <testcase name="Verify title exists" classname="ecosia" time="1.080" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify we can type into form field" classname="ecosia" time="1.930" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

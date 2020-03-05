@@ -2,29 +2,25 @@ module.exports = {
   
   // '@tags': ['ecosia', 'will_google'],
 
-  before : function(browser) {
-    // console.log('Setting up...')
+  beforeEach : function(browser) {
+    console.log('Setting up...LOLOLOLOLOLOLOLOLOLOLOLOLOLOLOL')
     browser
+    .resizeWindow(800, 600)
     .url('https://www.ecosia.org/')
     .waitForElementVisible('body')
   },
   
-  'Demo test Ecosia.org 1': function (browser) {
+  'Verify title exists': function (browser) {
     browser
       .assert.titleContains('Ecosia')
-      .assert.visible('input[type=search]')
       .end();
   },
 
-  'Demo test Ecosia.org 2': function (browser) {
+  'Verify we can type into form field': function (browser) {
     browser
-      .url('https://www.ecosia.org/')
-      .waitForElementVisible('body')
-      .assert.titleContains('Ecosia')
       .assert.visible('input[type=search]')
       .setValue('input[type=search]', 'nightwatch')
       .end();
   },
-
 
 };
