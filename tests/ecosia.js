@@ -1,6 +1,4 @@
 module.exports = {
-  
-  // '@tags': ['ecosia', 'will_google'],
 
   beforeEach : function(browser) {
     console.log('Setting up...LOLOLOLOLOLOLOLOLOLOLOLOLOLOLOL')
@@ -10,13 +8,13 @@ module.exports = {
     .waitForElementVisible('body')
   },
   
-  'Verify title exists': function (browser) {
+  'Verify title exists' : function (browser) {
     browser
       .assert.titleContains('Ecosia')
       .end();
   },
 
-  'Verify we can type into form field': function (browser) {
+  'Verify we can type into form field' : function (browser) {
     browser
       .assert.visible('input[type=search]')
       .setValue('input[type=search]', 'nightwatch')

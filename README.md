@@ -46,9 +46,7 @@ About to write to /Users/dalyw01/Desktop/learnNightwatch/package.json:
 }
 
 
-
 Then run this command to initiate nightwatch - npm install nightwatch --save
-
 
 Make 3 new folders - 
 
@@ -56,13 +54,11 @@ mkdir pages
 mkdir tests 
 mkdir libs
 
-
 Your directory should look like - 
 
 daly:learnNightwatch dalyw01$ ls
 Testplan.md		nightwatch.js		notes.txt			package.json		tests
 lib				node_modules		package-lock.json	pages
-
 
 Download selenium-standalone JAR from here - https://www.selenium.dev/downloads/
 
@@ -73,6 +69,8 @@ Place in drivers folder - lib/drivers/chromedriver
 Change nightwatch.js -  "server_path": "lib/drivers/chromedriver",
 
 To run a test - node nightwatch tests/ecosia.js
+
+To run a folder of tests - node nightwatch tests/
 
 Need to do more research into - https://nightwatch-api.netlify.com/
 

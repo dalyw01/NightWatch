@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="squarespace"
+    errors="0" failures="0" hostname="" id="" package="squarespace" skipped="0"
+    tests="2" time="12.23" timestamp="">
+  
+    <testcase name="TEST 1 : Visit SquareSpace home screen" classname="squarespace" time="2.923" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="TEST 2 : I click on GET STARTED button" classname="squarespace" time="9.311" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
