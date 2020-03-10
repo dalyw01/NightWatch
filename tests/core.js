@@ -10,24 +10,23 @@ module.exports = {
   'Test 1 - Run through core functionality for a media player on different sites': function (browser) {
 
     links = [ 
-      "https://is.gd/egubug",
-      "https://is.gd/uyajiw" 
+      'https://is.gd/egubug',
+      'https://is.gd/uyajiw' 
     ];
 
     for (i = 0; i < links.length; i++) 
     {
       console.log(`Running for the ${i}`)
-      
+
       browser
         .url(links[i])
         .waitForElementVisible('body')
-        //.expect.element('body').to.be.present.before(1000)
-        .assert.cssProperty("body"       , "font-family" , "ReithSans, Arial, Helvetica, freesans, sans-serif")
-        .assert.cssProperty("h1"         , "font-family" , "ReithSans, Arial, Helvetica, freesans, sans-serif")
-        .assert.cssProperty(".box-right" , "font-family" , "ReithSans, Arial, Helvetica, freesans, sans-serif")
+        .assert.cssProperty('body'       , 'font-family' , 'ReithSans, Arial, Helvetica, freesans, sans-serif')
+        .assert.cssProperty('h1'         , 'font-family' , 'ReithSans, Arial, Helvetica, freesans, sans-serif')
+        .assert.cssProperty('.box-right' , 'font-family' , 'ReithSans, Arial, Helvetica, freesans, sans-serif')
 
-        .moveToElement("#smphtml5iframemp", 10, 10)
-        .waitForElementVisible("#smphtml5iframemp", 500)
+        .moveToElement('#smphtml5iframemp', 10, 10)
+        .waitForElementVisible('#smphtml5iframemp', 500)
 
         .frame('smphtml5iframemp')
           //.assert.cssProperty(".p_iconHolder" , "background-color" , "rgba(0, 0, 0, 0)")
