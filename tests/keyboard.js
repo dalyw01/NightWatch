@@ -26,8 +26,17 @@ module.exports = {
     .assert.visible('input[type=text]')
     .setValue('input[type=text]', ['Komodo Dragon', browser.Keys.ENTER])
     .pause(2000)
-    browser.expect.elements('.LC20lb').count.to.equal(12);
-    browser.expect.elements('h3').count.to.equal(15);
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    .keys(browser.Keys.TAB)
+    browser.expect.elements('.LC20lb').count.to.equal(12)
+    browser.expect.elements('h3').count.to.equal(15)
     browser.end();
   },
 
