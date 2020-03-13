@@ -1,6 +1,6 @@
 module.exports = {
 
-  '@disabled': false, // This will prevent the test module from running.
+  '@disabled': false, // This will prevent the test module from running
 
   before : function (browser) // Before the whole test is run
   {
