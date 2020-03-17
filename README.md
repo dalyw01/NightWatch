@@ -75,5 +75,11 @@ To run a folder of tests - node nightwatch tests/
 Need to do more research into - https://nightwatch-api.netlify.com/
 
 
+module.exports = {
+  'Test 1':function(){},
+  'Test 2':function(){}
+  'Test 3':function(){}
+}
 
+nightwatch.js --test tests\demo.js --testcase "Test 1"
 

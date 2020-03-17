@@ -2,10 +2,10 @@ module.exports = {
 
   'TEST 1 : Visit SquareSpace home screen': function (browser) {
     browser
-      .url('https://www.squarespace.com/')
-      .waitForElementVisible('body')
-      .assert.titleContains('Build a Website – Website Builder – Squarespace')
-      .end();
+    .url('https://www.squarespace.com/')
+    .waitForElementVisible('body')
+    .assert.titleContains('Build a Website – Website Builder – Squarespace')
+    .end();
   },
 
   'TEST 2 : I click on GET STARTED button': function (browser) {

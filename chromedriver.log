@@ -1,11 +1,8 @@
 Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 9515
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1584115766.988][WARNING]: FromSockAddr failed on netmask
-[1584115769.289][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115769.391][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115769.492][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115770.151][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115770.311][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115770.526][SEVERE]: Timed out receiving message from renderer: 0.100
-[1584115770.628][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584432587.703][WARNING]: FromSockAddr failed on netmask
+[1584432589.654][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584432590.383][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584432590.483][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584432590.590][SEVERE]: Timed out receiving message from renderer: 0.100
