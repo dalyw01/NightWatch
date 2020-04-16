@@ -64,7 +64,7 @@ Then run this command to initiate nightwatch
 npm install nightwatch --save
 ```
 
-Make 3 new folders
+Make 2 new folders
 
 ```
 mkdir tests 
@@ -96,14 +96,34 @@ chromedriver
 selenium-server-standalone-3.141.59.jar
 ```
 
-Change nightwatch.json to  "server_path": "lib/drivers/chromedriver",
+Create a file called nightwatch.json in the main directory
 
 ```
+MC-S104581:nw dalyw01$ ls
+chromedriver.log	nightwatch.js		node_modules		package.json		tests_output
+lib			nightwatch.json		package-lock.json	tests
+```
+
+It's contents should be the following - 
+
+```
+{
+  "src_folders" : ["tests"],
+
   "webdriver" : {
     "start_process": true,
     "server_path": "lib/drivers/chromedriver",
     "port": 9515
+  },
+
+  "test_settings" : {
+    "default" : {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    }
   }
+}
 ```
 
 To run a test - 
