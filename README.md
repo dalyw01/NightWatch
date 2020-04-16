@@ -21,7 +21,7 @@ From the command line run an npm init
 daly:learnNightwatch dalyw01$ npm init
 ```
 
-You will be prompted with commands and enter the following - 
+You will be prompted with commands, press ENTER to the following (or enter the information) - 
 
 ```
 This utility will walk you through creating a package.json file.
@@ -67,7 +67,6 @@ npm install nightwatch --save
 Make 3 new folders
 
 ```
-mkdir pages 
 mkdir tests 
 mkdir libs
 ```
@@ -76,15 +75,26 @@ Your directory should look like -
 
 ```
 daly:learnNightwatch dalyw01$ ls
-Testplan.md		nightwatch.js		package.json		tests
-lib				node_modules		package-lock.json	pages
+Testplan.md 
+nightwatch.js 
+package.json 
+tests 
+lib	
+node_modules		
+package-lock.json	
 ```
 
-Download selenium-standalone JAR from here - https://www.selenium.dev/downloads/
+Download selenium-standalone JAR (e.g selenium-server-standalone-3.141.59.jar) from here - https://www.selenium.dev/downloads/
 
 Download chrome-driver here - https://chromedriver.chromium.org/downloads
 
-Place in drivers folder - lib/drivers/chromedriver
+Place both in lib/drivers folder
+
+```
+MC-S104581:learnNightwatch dalyw01$ ls lib/drivers
+chromedriver				
+selenium-server-standalone-3.141.59.jar
+```
 
 Change nightwatch.json to  "server_path": "lib/drivers/chromedriver",
 
