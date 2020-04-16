@@ -8,7 +8,7 @@ module.exports = {
     .end();
   },
 
-  'TEST 2: I click on GET STARTED button': function (browser) {
+  'TEST 2: I verify GET STARTED cta works': function (browser) {
     browser
     .url('https://www.squarespace.com/')
 

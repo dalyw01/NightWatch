@@ -3,15 +3,27 @@ A little repo for me to play with NightWatch
 
 Install node from here - https://nodejs.org/en/
 
-Create new folder
+Create new_folder
+
+```
+mkdir new_folder
+```
 
 Create nightwatch.js file and put this in
 
+```
 require('./node_modules/nightwatch/bin/runner.js');
+```
 
-From the command line run an "npm init", you will be prompted with commands and enter the following - 
+From the command line run an npm init
 
+```
 daly:learnNightwatch dalyw01$ npm init
+```
+
+You will be prompted with commands and enter the following - 
+
+```
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
@@ -44,21 +56,29 @@ About to write to /Users/dalyw01/Desktop/learnNightwatch/package.json:
   "author": "William Daly",
   "license": "ISC"
 }
+```
 
+Then run this command to initiate nightwatch
 
-Then run this command to initiate nightwatch - npm install nightwatch --save
+```
+npm install nightwatch --save
+```
 
-Make 3 new folders - 
+Make 3 new folders
 
+```
 mkdir pages 
 mkdir tests 
 mkdir libs
+```
 
 Your directory should look like - 
 
+```
 daly:learnNightwatch dalyw01$ ls
-Testplan.md		nightwatch.js		notes.txt			package.json		tests
+Testplan.md		nightwatch.js		package.json		tests
 lib				node_modules		package-lock.json	pages
+```
 
 Download selenium-standalone JAR from here - https://www.selenium.dev/downloads/
 
@@ -66,24 +86,33 @@ Download chrome-driver here - https://chromedriver.chromium.org/downloads
 
 Place in drivers folder - lib/drivers/chromedriver
 
-Change nightwatch.js -  "server_path": "lib/drivers/chromedriver",
+Change nightwatch.json to  "server_path": "lib/drivers/chromedriver",
 
+```
+  "webdriver" : {
+    "start_process": true,
+    "server_path": "lib/drivers/chromedriver",
+    "port": 9515
+  }
+```
 
-To run a test - node nightwatch tests/ecosia.js
+To run a test - 
 
-To run a folder of tests - node nightwatch tests/
+```
+node nightwatch tests/use_xpath_and_variables.js
+```
+
+To run a folder of tests 
+
+```
+node nightwatch tests/
+```
+
+To run a single test point in a test script
+
+```
+node nightwatch tests/basic_checks_squarespace.js --testcase "TEST 2: I verify GET STARTED cta works"
+```
 
 Need to do more research into - https://nightwatch-api.netlify.com/
-
-
-module.exports = {
-  'Test 1':function(){},
-  'Test 2':function(){}
-  'Test 3':function(){}
-}
-
-nightwatch.js --test tests\demo.js --testcase "Test 1"
-
-So for me - node nightwatch tests/squarespace.js --testcase "TEST 2: I click on GET STARTED button"
-
 
