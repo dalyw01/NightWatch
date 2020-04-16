@@ -71,17 +71,18 @@ mkdir tests
 mkdir libs
 ```
 
-Your directory should look like - 
+Your directory should look something like - 
 
 ```
-daly:learnNightwatch dalyw01$ ls
-Testplan.md 
-nightwatch.js 
-package.json 
-tests 
-lib	
+dalyw01$ ls
+nightwatch.js		
 node_modules		
+package.json		
+tests_output 
+lib			
+nightwatch.json		
 package-lock.json	
+tests
 ```
 
 Download selenium-standalone JAR (e.g selenium-server-standalone-3.141.59.jar) from here - https://www.selenium.dev/downloads/
