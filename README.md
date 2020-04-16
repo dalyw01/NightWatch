@@ -68,6 +68,7 @@ Place in drivers folder - lib/drivers/chromedriver
 
 Change nightwatch.js -  "server_path": "lib/drivers/chromedriver",
 
+
 To run a test - node nightwatch tests/ecosia.js
 
 To run a folder of tests - node nightwatch tests/
@@ -82,4 +83,7 @@ module.exports = {
 }
 
 nightwatch.js --test tests\demo.js --testcase "Test 1"
+
+So for me - node nightwatch tests/squarespace.js --testcase "TEST 2: I click on GET STARTED button"
+
 
