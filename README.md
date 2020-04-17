@@ -68,7 +68,7 @@ Make 2 new folders
 
 ```
 mkdir tests 
-mkdir libs
+mkdir lib
 ```
 
 Your directory should look something like - 
