@@ -133,10 +133,11 @@ To run a test you need to be in the root folder and not the test folder -
 node nightwatch tests/use_xpath_and_variables.js
 ```
 
-To run a folder of tests 
+To run a folder of tests with the default run either of the 2 commands - 
 
 ```
 node nightwatch tests/
+node nightwatch -e default
 ```
 
 To run a single test point in a test script
