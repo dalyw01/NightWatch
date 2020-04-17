@@ -97,7 +97,7 @@ chromedriver
 selenium-server-standalone-3.141.59.jar
 ```
 
-Create a file called nightwatch.json in the main directory
+Create a file called nightwatch.json in the root directory
 
 ```
 MC-S104581:nw dalyw01$ ls
@@ -127,7 +127,7 @@ It's contents should be similar to the following (link here for latest config ht
 }
 ```
 
-To run a test - 
+To run a test you need to be in the root folder and not the test folder - 
 
 ```
 node nightwatch tests/use_xpath_and_variables.js
