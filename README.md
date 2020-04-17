@@ -89,6 +89,8 @@ Download selenium-standalone JAR (e.g selenium-server-standalone-3.141.59.jar) f
 
 Download chrome-driver here - https://chromedriver.chromium.org/downloads
 
+Download geckdriver from here - https://github.com/mozilla/geckodriver/releases
+
 Place both in lib/drivers folder
 
 ```
