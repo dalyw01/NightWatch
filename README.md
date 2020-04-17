@@ -58,7 +58,7 @@ About to write to /Users/dalyw01/Desktop/learnNightwatch/package.json:
 }
 ```
 
-Then run this command to initiate nightwatch
+Then run an npm install command to initiate nightwatch - 
 
 ```
 npm install nightwatch --save
@@ -101,11 +101,11 @@ Create a file called nightwatch.json in the main directory
 
 ```
 MC-S104581:nw dalyw01$ ls
-chromedriver.log	nightwatch.js		node_modules		package.json		tests_output
-lib			nightwatch.json		package-lock.json	tests
+nightwatch.js		node_modules		  package.json		    tests_output
+lib			        nightwatch.json		package-lock.json	  tests
 ```
 
-It's contents should be the following - 
+It's contents should be similar to the following (link here for latest config https://nightwatchjs.org/gettingstarted/configuration/ )- 
 
 ```
 {
@@ -145,5 +145,5 @@ To run a single test point in a test script
 node nightwatch tests/basic_checks_squarespace.js --testcase "TEST 2: I verify GET STARTED cta works"
 ```
 
-Need to do more research into - https://nightwatch-api.netlify.com/
+For more info - https://nightwatch-api.netlify.com/
 
