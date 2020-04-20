@@ -3,22 +3,22 @@ A little repo for me to play with NightWatch
 
 Install node from here - https://nodejs.org/en/
 
-Create new_folder
+Create a folder called **new_folder**
 
 ```
 mkdir new_folder
 ```
 
-Create nightwatch.js file and put this in
+Create **nightwatch.js** file with the following contents - 
 
 ```
 require('./node_modules/nightwatch/bin/runner.js');
 ```
 
-From the command line run an npm init
+From the command line run, inside new_folder tun the following - 
 
 ```
-daly:learnNightwatch dalyw01$ npm init
+npm init
 ```
 
 You will be prompted with commands, press ENTER to the following (or enter the information) - 
@@ -64,7 +64,7 @@ Then run an npm install command to initiate nightwatch -
 npm install nightwatch --save
 ```
 
-Make 2 new folders
+Make 2 new folders - 
 
 ```
 mkdir tests 
@@ -74,15 +74,8 @@ mkdir lib
 Your directory should look something like - 
 
 ```
-dalyw01$ ls
-nightwatch.js		
-node_modules		
-package.json		
-tests_output 
-lib			
-nightwatch.json		
-package-lock.json	
-tests
+lib			node_modules		package.json
+nightwatch.js		package-lock.json	tests
 ```
 
 Download selenium-standalone JAR (e.g selenium-server-standalone-3.141.59.jar) from here - https://www.selenium.dev/downloads/
@@ -91,23 +84,35 @@ Download chrome-driver here - https://chromedriver.chromium.org/downloads
 
 Download geckdriver from here - https://github.com/mozilla/geckodriver/releases
 
-Place both in lib/drivers folder
+Extract gecko and chrome driver from zip folders
+
+Create a folder inside lib called **drivers**
+
+Place all above drivers and JAR file in lib/drivers folder
 
 ```
-MC-S104581:learnNightwatch dalyw01$ ls lib/drivers
-chromedriver				
-selenium-server-standalone-3.141.59.jar
+dalyw01$ ls
+chromedriver				geckodriver				selenium-server-standalone-3.141.59.jar
 ```
 
 Create a file called nightwatch.json in the root directory
 
 ```
-MC-S104581:nw dalyw01$ ls
+dalyw01$ ls
 nightwatch.js		node_modules		  package.json		    tests_output
 lib			        nightwatch.json		package-lock.json	  tests
 ```
 
-It's contents should be similar to the following (link here for latest config https://nightwatchjs.org/gettingstarted/configuration/ )- 
+Copy the "Manual Configuration" from this here onto nightwatch.json - https://nightwatchjs.org/gettingstarted/configuration/
+
+We will tweak the "server_path" value slightly to reflect our folder structure
+
+```
+    "server_path": "lib/drivers/chromedriver",
+    "port": 9515
+```
+
+It's contents should be similar to the following -
 
 ```
 {
