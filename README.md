@@ -129,6 +129,23 @@ It's contents should be similar to the following (link here for latest config ht
 }
 ```
 
+To run a test with firefox quick you can tweak the nightwatch.json file -
+
+```
+  "webdriver" : {
+    "start_process": true,
+    "server_path": "lib/drivers/geckodriver",
+    "port": 4444
+  },
+
+  "test_settings" : {
+    "firefox" : {
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      }
+    }
+```
+
 To run a test you need to be in the root folder and not the test folder - 
 
 ```
