@@ -95,7 +95,7 @@ dalyw01$ ls
 chromedriver				geckodriver				selenium-server-standalone-3.141.59.jar
 ```
 
-Create a file called nightwatch.json in the root directory
+Create a file called **nightwatch.json** in the root directory
 
 ```
 dalyw01$ ls
