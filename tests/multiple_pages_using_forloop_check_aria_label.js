@@ -10,8 +10,8 @@ module.exports = {
   'Test 1 - Run through core functionality for a media player on different sites': function (browser) {
 
     links = [ 
-      'https://is.gd/averud',
-      'https://is.gd/averud'
+      'https://www.website1.com',
+      'https://www.website2.com'
     ];
 
     for (i = 0; i < links.length; i++) 
